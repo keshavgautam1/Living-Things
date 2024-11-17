@@ -14,7 +14,7 @@ connectDB();
 
 app.use(
   cors({
-    origin: "  https://living-things-frontend.vercel.app/ ", // Replace with your frontend URL
+    origin: "https://living-things-frontend.vercel.app", // Replace with your frontend URL
     methods: ["GET", "POST"],
   })
 );
