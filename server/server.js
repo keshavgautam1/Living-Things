@@ -12,7 +12,12 @@ const app = express();
 
 connectDB();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "  https://living-things-frontend.vercel.app/ ", // Replace with your frontend URL
+    methods: ["GET", "POST"],
+  })
+);
 app.use(express.json());
 
 app.use("/api/logs", logRoutes);
